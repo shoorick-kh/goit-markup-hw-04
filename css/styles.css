@@ -178,6 +178,15 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.item-section-title {
+  display: none;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
 .item-section-icon {
   display: flex;
   align-items: center;
