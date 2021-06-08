@@ -84,13 +84,11 @@ img {
   align-items: center;
 }
 .nav-item .link {
-  padding: 10px 0;
+  padding: 32px 0;
 }
 .nav-list.list {
   display: flex;
-  padding-left: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: 93px;
 }
 
 .nav-list .nav-item:not(:last-child) {
@@ -100,8 +98,6 @@ img {
 .nav-mail-list.list {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav-item .link {
   display: flex;
@@ -178,34 +174,27 @@ img {
 
 /* Секция "Наши преимущества" */
 
-.icon {
+.item-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.item-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
   background: var(--background-color);
   border: none;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.icon-1 {
-  background-image: url(../images/antena.svg);
+.item-section-logo {
+  width: 70px;
+  height: 70px;
 }
-.icon-2 {
-  background-image: url(../images/clock.svg);
-}
-.icon-3 {
-  background-image: url(../images/diagram.svg);
-}
-.icon-4 {
-  background-image: url(../images/astronaut.svg);
-}
-.item-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.item-section-title {
-  display: inline-block;
+
+.item-section-list-title {
   width: 270px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -215,7 +204,6 @@ img {
   text-transform: uppercase;
 }
 .item-section-text {
-  display: inline-block;
   width: 270px;
   height: 75px;
   color: var(--second-color-font);
@@ -299,7 +287,6 @@ img {
   justify-content: center;
 }
 .social-item {
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,6 +299,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
 }
@@ -320,8 +308,8 @@ img {
   width: 20px;
   height: 20px;
 }
-.social-item:focus .social-logo,
-.social-item:hover .social-logo {
+.social-link:focus .social-logo,
+.social-link:hover .social-logo {
   fill: var(--color-white);
 }
 .our-clients {
@@ -347,12 +335,12 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--third-color-font);
-  border-radius: 4px;
   cursor: pointer;
 }
 .our-clients-link {
   padding: 16px 32px;
+  border: 1px solid var(--third-color-font);
+  border-radius: 4px;
 }
 .our-clients-list {
   display: flex;
@@ -363,12 +351,12 @@ img {
 .our-clients-item:not(:last-child) {
   margin-right: 30px;
 }
-.our-clients-item:hover,
-.our-clients-item:focus {
+.our-clients-link:hover,
+.our-clients-link:focus {
   border-color: var(--main-color-mark);
 }
-.our-clients-item:hover .our-clients-logo,
-.our-clients-item:focus .our-clients-logo {
+.our-clients-link:hover .our-clients-logo,
+.our-clients-link:focus .our-clients-logo {
   fill: var(--main-color-mark);
 }
 /* "portfolio.html" styles body */
@@ -484,8 +472,9 @@ img {
 .footer .social-logo {
   fill: var(--color-white);
 }
-.social-item:focus,
-.social-item:hover {
+
+.social-link:focus,
+.social-link:hover {
   background-color: var(--main-color-mark);
 }
 .footer {
