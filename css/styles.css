@@ -179,8 +179,8 @@ img {
   padding-bottom: 94px;
 }
 .item-section-title {
-  display: none;
-  margin-bottom: 10px;
+  visibility: hidden;
+  height: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.172;
