@@ -474,8 +474,7 @@ img {
   justify-content: flex-start;
   margin: 0;
 }
-.footer .social-item {
-  margin-bottom: 0;
+.footer .social-link {
   background: rgba(255, 255, 255, 0.1);
 }
 .footer .social-logo {
